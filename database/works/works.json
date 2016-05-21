@@ -2,7 +2,7 @@
 	"content":[
 	{
 		"name":"web",
-		"img":"/database/works/images/1.png",
+		"img":"/blog/database/works/images/1.png",
 		"title":"原生js搭建个人blog",
 		"kind":"web",
 		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。",
@@ -10,7 +10,7 @@
 	},
 	{
 		"name":"web",
-		"img":"/database/works/images/1.png",
+		"img":"/blog/database/works/images/1.png",
 		"title":"原生js搭建个人blog",
 		"kind":"web",
 		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。",
@@ -18,7 +18,7 @@
 	},
 	{
 		"name":"web",
-		"img":"/database/works/images/1.png",
+		"img":"/blog/database/works/images/1.png",
 		"title":"原生js搭建个人blog",
 		"kind":"web",
 		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。",
@@ -26,7 +26,7 @@
 	},
 	{
 		"name":"ps",
-		"img":"/database/works/images/1.png",
+		"img":"/blog/database/works/images/1.png",
 		"title":"原生js搭建个人blog",
 		"kind":"ps",
 		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。",
@@ -34,7 +34,7 @@
 	},
 	{
 		"name":"web",
-		"img":"/database/works/images/1.png",
+		"img":"/blog/database/works/images/1.png",
 		"title":"原生js搭建个人blog",
 		"kind":"web",
 		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。"
