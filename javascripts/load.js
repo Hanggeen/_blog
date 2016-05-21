@@ -4,7 +4,7 @@ function loadHome(){
 		content.removeChild(content.firstChild);
 	}
 
-	http.get("/database/home/home.json",function(res){
+	http.get("/blog/database/home/home.json",function(res){
 		if(res.status!==200){
 			console.log(res.statusText);
 			 if (res.status == 404)
@@ -23,7 +23,7 @@ function loadHome(){
 			cover.setAttribute("class","cover");
 
 			var portrait = document.createElement("img");
-			portrait.setAttribute("src","/database/home/portrait.jpg");
+			portrait.setAttribute("src","/blog/database/home/portrait.jpg");
 			portrait.setAttribute("alt","头像");
 
 			homeTop.appendChild(cover);
@@ -80,7 +80,7 @@ function loadText(url){
 		content.removeChild(content.firstChild);
 	}
 
-	http.get("/database/article/"+url+"/"+url+".json",function(res){
+	http.get("/blog/database/article/"+url+"/"+url+".json",function(res){
 		if(res.status!==200){
 			console.log(res.statusText);
 			 if (res.status == 404)
@@ -97,7 +97,7 @@ function loadText(url){
 					if(o =="img"){
 						for(var atr in item[o]){
 							para[atr]=item[o][atr];
-							para[atr]="/database/article/"+url+"/"+item[o][atr];
+							para[atr]="/blog/database/article/"+url+"/"+item[o][atr];
 						article.appendChild(para);
 						}
 					}
@@ -118,7 +118,7 @@ function loadTextList(hashkind){
 		content.removeChild(content.firstChild);
 	}
 
-	http.get("/database/article/article.json",function(res){
+	http.get("/blog/database/article/article.json",function(res){
 		if(res.status!==200){
 			console.log(res.statusText);
 			 if (res.status == 404)
@@ -170,7 +170,7 @@ function loadTextList(hashkind){
 					var img_a = document.createElement("a");
 					img_a.setAttribute("href","#list/"+item.url);
 					var img = document.createElement("img");
-					img.setAttribute("src","/database/article/"+item.url+"/cover.png");
+					img.setAttribute("src","/blog/database/article/"+item.url+"/cover.png");
 					img.setAttribute("alt","栏目配图");
 					img_a.appendChild(img);
 					li.appendChild(img_a);
@@ -216,7 +216,7 @@ function loadAlbumList(){
 		content.removeChild(content.firstChild);
 	}
 
-	http.get("/database/album/album.json",function(res){
+	http.get("/blog/database/album/album.json",function(res){
 		if(res.status!==200){
 			console.log(res.statusText);
 			 if (res.status == 404)
@@ -244,7 +244,7 @@ function loadAlbumList(){
 				img_a.setAttribute("href","#album/"+item.url);
 				img_a.setAttribute("class","img-link");
 				var img = document.createElement("img");
-				img.setAttribute("src","/database/album/"+item.url+"/cover.png");
+				img.setAttribute("src","/blog/database/album/"+item.url+"/cover.png");
 				img.setAttribute("alt","栏目配图");
 				img_a.appendChild(img);
 				li.appendChild(img_a);
@@ -280,7 +280,7 @@ function loadAlbum(url){
 		content.removeChild(content.firstChild);
 	}
 
-	http.get("/database/album/"+url+"/"+url+".json",function(res){
+	http.get("/blog/database/album/"+url+"/"+url+".json",function(res){
 		if(res.status!==200){
 			console.log(res.statusText);
 			 if (res.status == 404)
@@ -298,7 +298,7 @@ function loadAlbum(url){
 			for(var i=1;i<=json.qua;i++){
 				var a = document.createElement("a");
 				a.setAttribute("href","#album/"+url+"/"+i);
-				a.setAttribute("style","background-image: url(/database/album/"+url+"/"+i+".png);");
+				a.setAttribute("style","background-image: url(/blog/database/album/"+url+"/"+i+".png);");
 				pic.appendChild(a);
 			}
 		}
@@ -309,7 +309,7 @@ function loadAlbum(url){
 function loadPicBox(url,index){
 
 	var qua;
-	http.get("/database/album/"+url+"/"+url+".json",function(res){
+	http.get("/blog/database/album/"+url+"/"+url+".json",function(res){
 		if(res.status!==200){
 			console.log(res.statusText);
 			 if (res.status == 404)
@@ -321,10 +321,10 @@ function loadPicBox(url,index){
 			var boxImg = document.getElementById("box-img");
 			var picBox = document.getElementById("pic-box");
 
-			boxImg.src = "/database/album/"+url+"/"+index+".png";
+			boxImg.src = "/blog/database/album/"+url+"/"+index+".png";
 			boxImg.qua = json.qua;
 			qua = json.qua;
-			boxImg.setAttribute("src","/database/album/"+url+"/"+index+".png");
+			boxImg.setAttribute("src","/blog/database/album/"+url+"/"+index+".png");
 			boxImg.setAttribute("qua",json.qua);
 			picBox.style.display = "block";
 			check();
@@ -371,7 +371,7 @@ function loadPicBox(url,index){
 		// var num = Number(src.slice(src.lastIndexOf("/")+1,src.lastIndexOf("png")-1));
 
 		index--;
-		boxImg.setAttribute("src","/database/album/"+url+"/"+index+".png");
+		boxImg.setAttribute("src","/blog/database/album/"+url+"/"+index+".png");
 		check();
 
 
@@ -384,7 +384,7 @@ function loadPicBox(url,index){
 		// var num = Number(src.slice(src.lastIndexOf("/")+1,src.lastIndexOf("png")-1));
 
 		index++;
-		boxImg.setAttribute("src","/database/album/"+url+"/"+index+".png");
+		boxImg.setAttribute("src","/blog/database/album/"+url+"/"+index+".png");
 		check();
 
 
@@ -402,7 +402,7 @@ function loadWorksList(hashkind){
 		content.removeChild(content.firstChild);
 	}
 
-	http.get("/database/works/works.json",function(res){
+	http.get("/blog/database/works/works.json",function(res){
 		if(res.status!==200){
 			console.log(res.statusText);
 			 if (res.status == 404)
@@ -514,7 +514,7 @@ function loadThis(){
 		content.removeChild(content.firstChild);
 	}
 
-	http.get("/database/this/this.json",function(res){
+	http.get("/blog/database/this/this.json",function(res){
 		if(res.status!==200){
 			console.log(res.statusText);
 			 if (res.status == 404)
@@ -531,7 +531,7 @@ function loadThis(){
 					if(o =="img"){
 						for(var atr in item[o]){
 							para[atr]=item[o][atr];
-							para[atr]="/database/this/"+item[o][atr];
+							para[atr]="/blog/database/this/"+item[o][atr];
 						article.appendChild(para);
 						}
 					}
