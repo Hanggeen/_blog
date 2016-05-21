@@ -1,0 +1,28 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	background-color:#F5F7F9;
+	color:#555555;
+	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+	/*background: url(../images/bgn.jpg);*/
+}
+a{
+	color: #555555;
+	text-decoration: none;
+}
+ul>li{
+	list-style-type:none;
+}
+
+.clear{
+	clear: both;
+}
+sub{
+	color: #999999;
+}
+
+img{
+	border:none;
+}
