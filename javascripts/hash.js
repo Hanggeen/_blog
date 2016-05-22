@@ -21,7 +21,7 @@ function loadHash(){
 	}
 	// console.log(hashlist);
 	switch(hashlist[0]){
-		case "undefined":
+		case undefined:
 			loadHome();
 			break;
 		case "home":
