@@ -19,9 +19,9 @@ function loadHash(){
 		}
 		j=++i;
 	}
-	// console.log(hashlist);
+	console.log(hashlist[0]);
 	switch(hashlist[0]){
-		case undefined:
+		case "":
 			loadHome();
 			break;
 		case "home":
@@ -101,6 +101,7 @@ function loadHash(){
 			loadThis();
 			break;
 		default:
+			console.log("tag");
 			to404();
 	}
 
