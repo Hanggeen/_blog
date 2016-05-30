@@ -11,10 +11,26 @@
   <title>与你常在</title>
 </head>
 <body>
+<script type="text/javascript">
+if(/AppleWebKit.*mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent)))
+{
+    if(window.location.href.indexOf("?mobile")<0){
+        try{
+            if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+                window.location.href="/blog/mobile.html";
+            }else if(/iPad/i.test(navigator.userAgent)){
+                window.location.href="/blog/mobile.html";
+            }else{
+                window.location.href="/blog/mobile.html"
+            }
+        }catch(e){}
+    }
+}
+</script>
   <div id="container">
     <nav>
       <ul>
-        <li><a href="#home">首页 · Hanggeen</a></li>
+        <li><a href="#home">简介 · Hanggeen</a></li>
         <li><a href="#list">文章 · Article</a></li>
         <li><a href="#album">相册 · Album</a></li>
         <li><a href="#works">作品 · Works</a></li>
