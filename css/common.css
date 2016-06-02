@@ -6,7 +6,9 @@ body{
 	background-color:#F5F7F9;
 	color:#555555;
 	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
-	/*background: url(../images/bgn.jpg);*/
+	/*background-image: url(../images/444.jpg);*/
+	background-repeat:no-repeat;
+	background-attachment:fixed;
 }
 a{
 	color: #555555;

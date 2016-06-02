@@ -5,39 +5,55 @@
 		"img":"/blog/database/works/images/1.png",
 		"title":"原生js搭建个人blog",
 		"kind":"web",
-		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。",
-		"url":"https://www.baidu.com"
+		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。",
+		"url":"http://hanggeen.github.io"
 	},
 	{
 		"name":"web",
-		"img":"/blog/database/works/images/1.png",
-		"title":"原生js搭建个人blog",
+		"img":"/blog/database/works/images/game.png",
+		"title":"HTML5游戏（实现中）",
 		"kind":"web",
-		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。",
-		"url":"https://www.baidu.com"
+		"text":"使用HTML5的canvas画布，加以js控制效果，实现简单的射击，移动，碰撞，爆炸等效果"
 	},
 	{
-		"name":"web",
-		"img":"/blog/database/works/images/1.png",
-		"title":"原生js搭建个人blog",
-		"kind":"web",
-		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。",
-		"url":"https://www.baidu.com"
+		"name":"writing",
+		"img":"/blog/database/works/images/brave-min.jpg",
+		"title":"书写",
+		"kind":"others",
+		"text":"拍摄一些自己平时的书写，旧了没练字，写不出以前高中的霸气。加后期处理，形成复古暗光的效果。",
+		"url":"/blog/database/works/images/brave.jpg"
 	},
 	{
-		"name":"ps",
-		"img":"/blog/database/works/images/1.png",
-		"title":"原生js搭建个人blog",
+		"name":"photo",
+		"img":"/blog/database/works/images/strive-min.jpg",
+		"title":"图文",
+		"kind":"others",
+		"text":"拍摄半夜熬夜的自己的桌面，加以photoshop轻微处理。当生活变得如此艰难，也不能到处吐苦水，还是得自己鼓励一下自己。",
+		"url":"/blog/database/works/images/strive.jpg"
+	},
+	{
+		"name":"毕业晚会海报",
+		"img":"/blog/database/works/images/final-party-min.jpg",
+		"title":"毕业晚会海报",
 		"kind":"ps",
-		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。",
-		"url":"https://www.baidu.com"
+		"text":"广东工业大学计算机学院毕业晚会海报，长12米，高4.5米，旨在为晚会上的节目添一番色彩！",
+		"url":"/blog/database/works/images/final-party.jpg"
 	},
 	{
-		"name":"web",
-		"img":"/blog/database/works/images/1.png",
-		"title":"原生js搭建个人blog",
-		"kind":"web",
-		"text":"使用HTML5，CSS3，原生JS搭建的个人博客。没有使用任何插件，代码库。自行设计UI界面。整个网站于一个html，使用ajax去获取相关文档。通过a标签href='#'去改变location.hash，从而触发相关操作，进行页面局部刷新。"
+		"name":"邀请函",
+		"img":"/blog/database/works/images/invitation-min.jpg",
+		"title":"邀请函",
+		"kind":"ps",
+		"text":"邀请贵宾专用邀请函，特意采用瓷器样式为邀请函添加一番贵气。",
+		"url":"/blog/database/works/images/invitation.jpg"
+	},
+	{
+		"name":"迎新海报",
+		"img":"/blog/database/works/images/welcome-2015-min.jpg",
+		"title":"迎新海报",
+		"kind":"ps",
+		"text":"计算机学院欢迎2014届新生的宣传海报，长2.4米，这里是用过建造“广工”星球，并用富有生命力的颜色，去欢迎新同学的到来。",
+		"url":"/blog/database/works/images/welcome-2015.jpg"
 	}
 
 	]

@@ -128,7 +128,7 @@ function loadTextList(hashkind){
 			var json = JSON.parse(res.responseText);
 			// var kinds = ["全部","生活","技术","记录"];
 			// var kindsName = ["all","life","skill","record"];
-			var kind = {"all":"全部","life":"生活","skill":"技术","record":"记录"};
+			var kind = {"all":"全部","life":"生活","skill":"笔记","record":"记录"};
 			// 创建一个分类的节点
 			var classify = document.createElement("div");
 			classify.setAttribute("id","classify");
@@ -410,7 +410,6 @@ function loadWorksList(hashkind){
 		}
 		else{
 			var json = JSON.parse(res.responseText);
-			// var kinds = ["全部","生活","技术","记录"];
 			// var kindsName = ["all","life","skill","record"];
 			var kind = {"all":"全部","web":"前端","ps":"Ps","others":"其他"};
 			// 创建一个分类的节点
