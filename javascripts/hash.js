@@ -3,6 +3,7 @@ window.onbeforeunload = loadHash();
 
 window.onhashchange =function(){
 	loadHash();
+	console.log("aaa");
 }
 
 function loadHash(){

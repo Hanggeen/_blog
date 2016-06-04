@@ -45,6 +45,7 @@ nav>ul>li>a{
 	border: 1px solid #555555;
 	border-radius:25px 0px 0px 25px;
 	background-color: #555555;
+	/*background-color: #265B8D;*/
 	transition-property: background-color,margin-right;
 	transition-duration: 0.2s;
 	transition-timing-function: linear;
@@ -155,6 +156,10 @@ nav>ul>li>a:hover{
 }
 #classify>a:hover{
 	background: #EEEEEE;
+}
+#classify>.classify_active{
+	background: #EEEEEE;
+	border-bottom: 2px solid #555555;
 }
 #classify>a:active{
 	background: #EEEEEE;
@@ -458,15 +463,13 @@ background-image: url(pic.png);
 
 
 #list>ul>li,#album>ul>li,.personal,#article,#works>ul>li,#pic>a{
-	opacity:0;
-	transform:translateY(-20px);
-	-webkit-transform:translateY(20px);  /*兼容-webkit-引擎浏览器*/
-	-moz-transform:translateY(20px);
+	opacity:1;
 	animation:show 0.5s;
 	-webkit-animation:show 0.5s; /* Safari and Chrome */
 	-moz-animation:show 0.5s; /* Firefox */
 	-ms-animation:show 0.5s; /* IE*/
 	-o-animation:show 0.5s; /* Opera */
+       animation-fill-mode:forwards;
        -webkit-animation-fill-mode:forwards;
        -moz-animation-fill-mode:forwards;
        -ms-animation-fill-mode:forwards;
@@ -474,31 +477,35 @@ background-image: url(pic.png);
 }
 @keyframes show
 {
-0%   {}
-100% {transform:translateY(0px);opacity:1;}
+0%   {opacity:0;transform:translateY(20px);}
+100% {opacity:1;transform:translateY(0px);}
 }
-@-moz-keyframes myfirst /* Firefox */
+@-webkit-keyframes show /* Safari and Chrome */
 {
-0%   {}
-100% {transform:translateY(0px);opacity:1;}
+0%   {opacity:0;-webkit-transform:translateY(20px);}
+100% {opacity:1;-webkit-transform:translateY(0px);}
 }
-
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-moz-keyframes show /* Firefox */
 {
-0%   {}
-100% {transform:translateY(0px);opacity:1;}
+0%   {opacity:0;}
+0%   {opacity:0;-moz-transform:translateY(20px);}
+100% {opacity:1;-moz-transform:translateY(0px);}
 }
-
-@-o-keyframes myfirst /* Opera */
+@-ms-keyframes show /* IE */
 {
-0%   {}
-100% {transform:translateY(0px);opacity:1;}
+0%   {opacity:0;-ms-transform:translateY(20px);}
+100% {opacity:1;-ms-transform:translateY(0px);}
+}
+@-o-keyframes show /* Opera */
+{
+0%   {opacity:0;-o-transform:translateY(20px);}
+100% {opacity:1;-o-transform:translateY(0px);}
 }
 
 
 
 #pic-box{
-	opacity:0;
+	opacity:1;
 	animation:show 0.5s;
 	-webkit-animation:show-box 0.5s; /* Safari and Chrome */
 	-moz-animation:show-box 0.5s; /* Firefox */
@@ -512,23 +519,30 @@ background-image: url(pic.png);
 
 @keyframes show-box
 {
-0%   {}
-100% {opacity:1;}
-}
-@-moz-keyframes myfirst /* Firefox */
-{
-0%   {}
+0%   {opacity:0;}
 100% {opacity:1;}
 }
 
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes show-box /* Safari and Chrome */
 {
-0%   {}
+0%   {opacity:0;}
 100% {opacity:1;}
 }
 
-@-o-keyframes myfirst /* Opera */
+@-moz-keyframes show-box/* Firefox */
 {
-0%   {}
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes show-box /* IE */
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes show-box /* Opera */
+{
+0%   {opacity:0;}
 100% {opacity:1;}
 }

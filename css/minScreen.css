@@ -24,19 +24,21 @@
 }
 #container>nav>ul>li{
 	display: inline-block;
-	width: 150px;
-	padding: 20px 0px;
-	line-height: 15px;
 }
 
 #container>nav>ul>li>a{
+	display: block;
+	height: 50px;
+	width: 150px;
 	color: #FFFFFF;
 	font-size: 15px;
+	line-height: 50px;
+	text-align: center;
 }
 #container>nav>ul>li>a:hover{
 	color: #FFFFFF;
 	font-size: 15px;
-	text-decoration: underline;
+	background-color: #999999;
 }
 #content{
 	padding:0px 30px;
@@ -152,7 +154,10 @@ article>sub{
 	background: #EEEEEE;
 	border-bottom: 2px solid #555555;
 }
-
+#classify>.classify_active{
+	background: #EEEEEE;
+	border-bottom: 2px solid #555555;
+}
 /*以下是菜单样式*/
 #list>ul{
 	padding-top: 20px;/*留给分类选栏的位置*/
@@ -384,3 +389,89 @@ background-image: url(pic.png);
 		width: 620px;
 		padding:0px 40px 40px 40px;
 	}*/
+
+
+#list>ul>li,#album>ul>li,.personal,#article,#works>ul>li,#pic>a{
+	opacity:1;
+	animation:show 0.5s;
+	-webkit-animation:show 0.5s; /* Safari and Chrome */
+	-moz-animation:show 0.5s; /* Firefox */
+	-ms-animation:show 0.5s; /* IE*/
+	-o-animation:show 0.5s; /* Opera */
+       animation-fill-mode:forwards;
+       -webkit-animation-fill-mode:forwards;
+       -moz-animation-fill-mode:forwards;
+       -ms-animation-fill-mode:forwards;
+       -o-animation-fill-mode:forwards;
+}
+@keyframes show
+{
+0%   {opacity:0;transform:translateY(20px);}
+100% {opacity:1;transform:translateY(0px);}
+}
+@-webkit-keyframes show /* Safari and Chrome */
+{
+0%   {opacity:0;-webkit-transform:translateY(20px);}
+100% {opacity:1;-webkit-transform:translateY(0px);}
+}
+@-moz-keyframes show /* Firefox */
+{
+0%   {opacity:0;}
+0%   {opacity:0;-moz-transform:translateY(20px);}
+100% {opacity:1;-moz-transform:translateY(0px);}
+}
+@-ms-keyframes show /* IE */
+{
+0%   {opacity:0;-ms-transform:translateY(20px);}
+100% {opacity:1;-ms-transform:translateY(0px);}
+}
+@-o-keyframes show /* Opera */
+{
+0%   {opacity:0;-o-transform:translateY(20px);}
+100% {opacity:1;-o-transform:translateY(0px);}
+}
+
+
+
+#pic-box{
+	opacity:1;
+	animation:show 0.5s;
+	-webkit-animation:show-box 0.5s; /* Safari and Chrome */
+	-moz-animation:show-box 0.5s; /* Firefox */
+	-ms-animation:show-box 0.5s; /* IE*/
+	-o-animation:show-box 0.5s; /* Opera */
+       -webkit-animation-fill-mode:forwards;
+       -moz-animation-fill-mode:forwards;
+       -ms-animation-fill-mode:forwards;
+       -o-animation-fill-mode:forwards;
+}
+
+@keyframes show-box
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes show-box /* Safari and Chrome */
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes show-box/* Firefox */
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes show-box /* IE */
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes show-box /* Opera */
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
