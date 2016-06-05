@@ -10,8 +10,16 @@
 	},
 	{
 		"name":"web",
+		"img":"/blog/database/works/images/callgame.jpg",
+		"title":"HTML5接电话游戏",
+		"kind":"web",
+		"text":"在玩手游时突然想试试用前端技术实现手游。游戏设计引自史上最牛的游戏app，本游戏支持移动端和电脑端。",
+		"url":"http://hanggeen.github.io/callgame/"
+	},
+	{
+		"name":"web",
 		"img":"/blog/database/works/images/game.png",
-		"title":"HTML5游戏（实现中）",
+		"title":"HTML5打战机游戏（实现中）",
 		"kind":"web",
 		"text":"使用HTML5的canvas画布，加以js控制效果，实现简单的射击，移动，碰撞，爆炸等效果"
 	},
